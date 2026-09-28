@@ -10,11 +10,12 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Isso é assustador!",
-                afirmacao: "afirmacao"
+                afirmacao:
+                    ["No inicio ficou com medo do que essa tecnologia pode fazer."
             },
             {
                 texto: "Isso é maravilhoso!",
-                afirmacao: "afirmacao"
+                afirmacao: "Quis saber como usar IA no seu dia a dia."
             }           
             
         ]
