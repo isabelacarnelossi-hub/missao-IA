@@ -10,34 +10,33 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Isso é assustador!",
-                afirmacao:[
-                    "No inicio ficou com medo do que essa tecnologia pode fazer.",
-                    "Achou assustador pensar na velocidade na qual a tecnologia está avançando"
-                    ]
-                
+                afirmacao: [
+                    "No início ficou com medo do que essa tecnologia pode fazer.",
+                    "Achou assustador pensar na velocidade na qual a tecnologia está avançando."
+                ]
             },
             {
                 texto: "Isso é maravilhoso!",
                 afirmacao: [
                     "Quis saber como usar IA no seu dia a dia.",
-                    "pensou que essa nova tecnologia pode ajudar várias tarefas do seu dia a dia."
-            }           
-            
+                    "Pensou que essa nova tecnologia pode ajudar em várias tarefas do seu dia a dia."
+                ]
+            }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre elaIA. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
+        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre ela. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
         alternativas: [
             {
-                texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
-                afirmacao: [ 
-                    "achou que a IA facilitaria o trabalho."
-                    ]
+                texto: "Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                afirmacao: [
+                    "Achou que a IA facilitaria o trabalho."
+                ]
             },
             {
                 texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao:" [
-                    "é possível as rodas de conversas sem o uso da IA"
+                afirmacao: [
+                    "Acredita que é possível realizar rodas de conversa sem o uso da IA."
                 ]
             }
         ]
@@ -46,64 +45,61 @@ const perguntas = [
         enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
         alternativas: [
             {
-                texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao:" [
-                    "debate sobre a IA discutindo sobre o futuro das maquinas."
+                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendo a importância de proteger os trabalhadores.",
+                afirmacao: [
+                    "Participou do debate sobre IA defendendo o futuro e a proteção dos trabalhadores."
+                ]
             },
             {
-                texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"[
-                    "achou que a IA pode trazer melhorias para a mao de obra facilitada"
+                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                afirmacao: [
+                    "Achou que a IA pode trazer melhorias e otimizar a mão de obra."
                 ]
             }
-            
         ]
     },
     {
         enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
         alternativas: [
             {
-                texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao:"[
-                    "a IA ajuda na realizaçao de imagens"
+                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                afirmacao: [
+                    "Acredita que a criação manual ainda é muito relevante."
+                ]
             },
             {
-                texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao:"[
-                    "IA tem a capacidade de auxiliar na criaçao de imagens"
+                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
+                afirmacao: [
+                    "Percebeu que a IA tem uma grande capacidade de auxiliar na criação de imagens."
                 ]
-
-        
             }
-            
         ]
     },
     {
-        enunciado: " Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
         alternativas: [
             {
                 texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao:"[
-                    "percebeu que o chat comete erros e por isso precisa prestar atençao pois ele nao é humano"
+                afirmacao: [
+                    "Percebeu que o chat comete erros e por isso precisa prestar atenção, pois ele não é humano."
+                ]
             },
             {
                 texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao:"[
-                    "percebeu que nao é um problema utilizar o texto inteiro"
+                afirmacao: [
+                    "Acredita que não há problemas em utilizar o texto gerado integralmente."
                 ]
             }
-            
-            
         ]
-    },
+    }
 ];
 
-let atual = 0; 
+let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
-    if(atual >= perguntas.length){
+    if (atual >= perguntas.length) {
         mostraResultado();
         return;
     }
@@ -113,8 +109,8 @@ function mostraPergunta() {
     mostraAlternativas();
 }
 
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas){
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
@@ -122,17 +118,20 @@ function mostraAlternativas(){
     }
 }
 
-function respostaSelecionada(opcaoSelecionada){
-    const afirmacoes = opcaoSelecionada.afirmacao;
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = Array.isArray(opcaoSelecionada.afirmacao) 
+        ? opcaoSelecionada.afirmacao.join(" ") 
+        : opcaoSelecionada.afirmacao;
+        
     historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
 }
 
-function mostraResultado(){
+function mostraResultado() {
     caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = ""; 
+    caixaAlternativas.textContent = "";
 }
 
 mostraPergunta();
