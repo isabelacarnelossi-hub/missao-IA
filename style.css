@@ -1,21 +1,20 @@
 :root {
-    --cor-fundo: #1a0913;        /* Rosa escuro quase preto para o fundo geral */
-    --cor-principal: #2d1124;    /* Tom de rosa escuro para a caixa do quiz */
-    --cor-secundaria: #4a1d3d;   /* Tom médio para o fundo dos botões */
-    --cor-destaque: #ff66b2;     /* Rosa vibrante para títulos e destaques */
-    --cor-hover: #ff99cc;        /* Rosa claro para o efeito hover nos botões */
-    --cor-texto: #ffe6f2;        /* Rosa bem claro/esbranquiçado para boa leitura */
+    --cor-fundo: #141204;       /* Fundo bem escuro com tom quente */
+    --cor-principal: #262208;   /* Fundo do card principal */
+    --cor-secundaria: #3d3711;  /* Fundo dos botões */
+    --cor-destaque: #facc15;    /* Amarelo vivo de destaque */
+    --cor-texto: #fef08a;       /* Amarelo claro/suave para leitura */
 }
 
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .caixa-principal {
@@ -23,10 +22,10 @@ body {
     width: 90%;
     max-width: 600px;
     text-align: center;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(255, 102, 178, 0.15);
-    border: 1px solid rgba(255, 102, 178, 0.2);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    border: 1px solid rgba(250, 204, 21, 0.2);
 }
 
 h1 {
@@ -36,8 +35,8 @@ h1 {
 
 .caixa-perguntas {
     font-size: 1.1rem;
-    line-height: 1.5;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .caixa-alternativas {
@@ -49,9 +48,9 @@ h1 {
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
-    border: 1px solid rgba(255, 102, 178, 0.3);
+    border: 1px solid var(--cor-destaque);
     border-radius: 12px;
-    padding: 14px 18px;
+    padding: 15px;
     font-size: 0.95rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -61,11 +60,10 @@ button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-fundo);
     font-weight: bold;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 102, 178, 0.4);
 }
 
 .texto-resultado {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     line-height: 1.6;
+    color: var(--cor-destaque);
 }
