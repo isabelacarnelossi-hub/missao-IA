@@ -6,100 +6,78 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Após uma semana muito corrida e exaustiva na escola ou trabalho, você percebe que está física e mentalmente cansado. Qual o seu primeiro pensamento ao chegar no final de semana?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: [
-                    "No início ficou com medo do que essa tecnologia pode fazer.",
-                    "Achou assustador pensar na velocidade na qual a tecnologia está avançando."
-                ]
+                texto: "Preciso tirar um tempo só para mim, descansar a mente e desconectar do mundo.",
+                afirmacao: "Você entende a importância de desacelerar quando o corpo pede trégua."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: [
-                    "Quis saber como usar IA no seu dia a dia.",
-                    "Pensou que essa nova tecnologia pode ajudar em várias tarefas do seu dia a dia."
-                ]
+                texto: "Vou continuar produzindo e realizando tarefas para não perder tempo.",
+                afirmacao: "Você busca estar sempre em movimento, mas precisa tomar cuidado com o esgotamento."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre ela. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
+        enunciado: "Você nota que tem passado muitas horas usando redes sociais antes de dormir, o que tem prejudicado a qualidade do seu sono. Que atitude você decide tomar?",
         alternativas: [
             {
-                texto: "Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: [
-                    "Achou que a IA facilitaria o trabalho."
-                ]
+                texto: "Definir um limite diário de uso das telas e criar uma rotina relaxante de sono.",
+                afirmacao: "Sabe estabelecer limites saudáveis entre o mundo digital e seu bem-estar."
             },
             {
-                texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: [
-                    "Acredita que é possível realizar rodas de conversa sem o uso da IA."
-                ]
+                texto: "Continuar usando as redes até pegar no sono, mesmo acordando cansado no dia seguinte.",
+                afirmacao: "Ainda encontra dificuldades para priorizar uma higiene do sono adequada."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Em uma conversa entre amigos sobre saúde e qualidade de vida, surge o tema sobre a prática regular de atividades físicas e alimentação consciente. Qual o seu posicionamento?",
         alternativas: [
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendo a importância de proteger os trabalhadores.",
-                afirmacao: [
-                    "Participou do debate sobre IA defendendo o futuro e a proteção dos trabalhadores."
-                ]
+                texto: "Defendo que cuidar do corpo com exercícios e boa alimentação é fundamental para a saúde mental.",
+                afirmacao: "Reconhece que a saúde física e a saúde mental caminham juntas."
             },
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: [
-                    "Achou que a IA pode trazer melhorias e otimizar a mão de obra."
-                ]
+                texto: "Acredito que cuidados com o corpo demandam muito esforço e não são prioridade no momento.",
+                afirmacao: "Prioriza outras áreas da vida no momento, deixando a rotina física em segundo plano."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Diante de um momento de estresse intenso ou ansiedade com os compromissos futuros, como você reage?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: [
-                    "Acredita que a criação manual ainda é muito relevante."
-                ]
+                texto: "Pratico rotinas de respiração, meditação ou busco conversar com alguém de confiança sobre o que sinto.",
+                afirmacao: "Desenvolveu estratégias eficientes para acolher e gerenciar suas emoções."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: [
-                    "Percebeu que a IA tem uma grande capacidade de auxiliar na criação de imagens."
-                ]
+                texto: "Tento ignorar o sentimento e guardo tudo para mim, esperando que o estresse passe sozinho.",
+                afirmacao: "Tende a reprimir sentimentos difíceis em vez de processá-los."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "Um colega te convida para assumir uma responsabilidade extra, mas sua agenda já está lotada e você está no limite de sua energia. O que você faz?",
         alternativas: [
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: [
-                    "Percebeu que o chat comete erros e por isso precisa prestar atenção, pois ele não é humano."
-                ]
+                texto: "Digo 'não' de forma respeitosa, priorizando minha saúde mental e meus limites pessoais.",
+                afirmacao: "Aprendeu a prática fundamental de dizer 'não' para proteger sua paz."
             },
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: [
-                    "Acredita que não há problemas em utilizar o texto gerado integralmente."
-                ]
+                texto: "Aceito o pedido mesmo sabendo que ficarei sobrecarregado, para não chatear a outra pessoa.",
+                afirmacao: "Muitas vezes coloca a expectativa dos outros acima da sua própria saúde mental."
             }
         ]
     }
 ];
 
-let atual = 0;
+let atual = 0; 
 let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
-    if (atual >= perguntas.length) {
+    if(atual >= perguntas.length){
         mostraResultado();
         return;
     }
@@ -109,8 +87,8 @@ function mostraPergunta() {
     mostraAlternativas();
 }
 
-function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
@@ -118,20 +96,17 @@ function mostraAlternativas() {
     }
 }
 
-function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = Array.isArray(opcaoSelecionada.afirmacao) 
-        ? opcaoSelecionada.afirmacao.join(" ") 
-        : opcaoSelecionada.afirmacao;
-        
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacoes = opcaoSelecionada.afirmacao;
     historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
 }
 
-function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+function mostraResultado(){
+    caixaPerguntas.textContent = "Sua Jornada até 2030...";
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = ""; 
 }
 
 mostraPergunta();
